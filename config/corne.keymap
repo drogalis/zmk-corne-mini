@@ -6,6 +6,11 @@
 #define NAV 1
 #define SYM 2
 #define ADJ 3
+#define ADA 4
+#define ADB 5
+#define ADC 6
+#define ADD 7
+#define ADF 8
 
 //testing mouse movement and scroll binds...
 
@@ -170,9 +175,9 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp TAB    &kp G       &kp F        &kp D       &kp W        &kp J        &kp L     &kp L        &kp O          &kp U           &kp Y          &kp BACKSPACE
-&kp LSHFT  &hm LSHFT C  &hm LGUI S  &kp T       &kp N        &kp B        &kp COMMA &kp R        &kx A          &hm RGUI I      &hm RSHFT H    &kp SQT
-&kp LCTRL  &hm LCTRL Q  &hm LALT V  &kp M       &kp P        &kp Z        &kp N     &kp X        &kp COMMA      &hm RALT DOT    &hm RCTRL FSLH &kp RSHFT
+&kp TAB    &kp Q       &kp W        &kp E       &kp R        &kp T        &kp Y    &kp U        &kp I          &kp O        &kp P          &kp BACKSPACE
+&kp LSHFT  &hm LGUI A  &hm LSHFT S  &hm LALT D  &hm LCTRL F  &kp G        &kp H    &hm RCTRL J  &hm RALT K     &hm RSHFT L  &hm RGUI SEMI  &kp SQT
+&kp LCTRL  &kp Z       &kp X        &kp C       &kp V        &kp B        &kp N    &kp M        &kp COMMA      &kp DOT      &kp FSLH       &kp RSHFT
                                     &kp LGUI    &mo 1        &kp SPACE    &kp RET  &lt 2 TAB    &kp BACKSPACE
             >;
         };
@@ -218,14 +223,60 @@
                                      &trans        &trans      &trans            &trans  &trans  &trans
             >;
         };
-    };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
+        ADA {
+                display-name = "Sym1";
 
-        l3 {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            bindings = <
+&trans  &kp EXCL  &kp AT          &kp HASH           &kp DLLR         &kp PRCNT    &kp CARET  &kp AMPS         &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RPAR       &trans
+&trans  &trans    &trans          &hm LALT UP_ARROW  &hm LCTRL SQT    &kp GRAVE    &kp MINUS  &hm RCTRL EQUAL  &hm RALT LBKT  &hm RSHFT RBKT        &hm RGUI BSLH  &trans
+&trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp TILDE    &kp UNDER  &kp PLUS         &kp LBRC       &kp RBRC              &kp PIPE       &trans
+                                  &kp LGUI           &trans           &kp SPACE    &kp RET    &trans           &trans
+            >;
+        };
+
+        ADB {
+                display-name = "Sym2";
+
+            bindings = <
+&trans  &kp EXCL  &kp AT          &kp HASH           &kp DLLR         &kp PRCNT    &kp CARET  &kp AMPS         &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RPAR       &trans
+&trans  &trans    &trans          &hm LALT UP_ARROW  &hm LCTRL SQT    &kp GRAVE    &kp MINUS  &hm RCTRL EQUAL  &hm RALT LBKT  &hm RSHFT RBKT        &hm RGUI BSLH  &trans
+&trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp TILDE    &kp UNDER  &kp PLUS         &kp LBRC       &kp RBRC              &kp PIPE       &trans
+                                  &kp LGUI           &trans           &kp SPACE    &kp RET    &trans           &trans
+            >;
+        };
+
+        ADC {
+                display-name = "Sym2";
+
+            bindings = <
+&trans  &kp EXCL  &kp AT          &kp HASH           &kp DLLR         &kp PRCNT    &kp CARET  &kp AMPS         &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RPAR       &trans
+&trans  &trans    &trans          &hm LALT UP_ARROW  &hm LCTRL SQT    &kp GRAVE    &kp MINUS  &hm RCTRL EQUAL  &hm RALT LBKT  &hm RSHFT RBKT        &hm RGUI BSLH  &trans
+&trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp TILDE    &kp UNDER  &kp PLUS         &kp LBRC       &kp RBRC              &kp PIPE       &trans
+                                  &kp LGUI           &trans           &kp SPACE    &kp RET    &trans           &trans
+            >;
+        };
+
+        ADD {
+                display-name = "Sym3";
+
+            bindings = <
+&trans  &kp EXCL  &kp AT          &kp HASH           &kp DLLR         &kp PRCNT    &kp CARET  &kp AMPS         &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RPAR       &trans
+&trans  &trans    &trans          &hm LALT UP_ARROW  &hm LCTRL SQT    &kp GRAVE    &kp MINUS  &hm RCTRL EQUAL  &hm RALT LBKT  &hm RSHFT RBKT        &hm RGUI BSLH  &trans
+&trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp TILDE    &kp UNDER  &kp PLUS         &kp LBRC       &kp RBRC              &kp PIPE       &trans
+                                  &kp LGUI           &trans           &kp SPACE    &kp RET    &trans           &trans
+            >;
+        };
+
+        ADF {
+                display-name = "Sym4";
+
+            bindings = <
+&trans  &kp EXCL  &kp AT          &kp HASH           &kp DLLR         &kp PRCNT    &kp CARET  &kp AMPS         &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RPAR       &trans
+&trans  &trans    &trans          &hm LALT UP_ARROW  &hm LCTRL SQT    &kp GRAVE    &kp MINUS  &hm RCTRL EQUAL  &hm RALT LBKT  &hm RSHFT RBKT        &hm RGUI BSLH  &trans
+&trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp TILDE    &kp UNDER  &kp PLUS         &kp LBRC       &kp RBRC              &kp PIPE       &trans
+                                  &kp LGUI           &trans           &kp SPACE    &kp RET    &trans           &trans
+            >;
         };
     };
 };
