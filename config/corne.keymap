@@ -86,10 +86,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans  &kp G             &kp F           &kp D           &kp W    &kp J          &trans       &kp L        &kp O            &kp U                   &kp Y               &trans
-&trans  &hm LEFT_SHIFT C  &hm LEFT_GUI S  &lt 5 T         &lt 4 N  &kp B          &kp COMMA    &lt 6 R      &lt 7 A          &hm LEFT_GUI I          &hm LEFT_SHIFT H    &trans
-&trans  &hm LCTRL Q       &hm LEFT_ALT V  &kp M           &kp P    &kp Z          &trans       &kp X        &kp PERIOD       &hm LEFT_ALT SEMICOLON  &hm LEFT_CONTROL K  &trans
-                                          &kp LEFT_SHIFT  &lt 1 E  &lt 3 SPACE    &lt 3 SPACE  &lt 2 SPACE  &kp RIGHT_SHIFT
+&none  &kp G             &kp F           &kp D           &kp W    &kp J          &none        &kp L        &kp O            &kp U                   &kp Y               &none
+&none  &hm LEFT_SHIFT C  &hm LEFT_GUI S  &lt 5 T         &lt 4 N  &kp B          &kp COMMA    &lt 6 R      &lt 7 A          &hm LEFT_GUI I          &hm LEFT_SHIFT H    &none
+&none  &hm LCTRL Q       &hm LEFT_ALT V  &kp M           &kp P    &kp Z          &none        &kp X        &kp PERIOD       &hm LEFT_ALT SEMICOLON  &hm LEFT_CONTROL K  &none
+                                         &kp LEFT_SHIFT  &lt 1 E  &lt 3 SPACE    &lt 3 SPACE  &lt 2 SPACE  &kp RIGHT_SHIFT
             >;
         };
 
@@ -103,10 +103,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans  &trans           &trans           &kp TILDE  &kp QUESTION    &trans          &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans                &trans                 &trans
-&trans  &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp PLUS   &kp UNDERSCORE  &kp PERCENT     &kp PIPE      &kp MINUS         &kp EQUAL          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN      &kp HASH   &kp DOLLAR      &trans          &trans        &kp AMPERSAND     &kp ASTERISK       &kp CARET             &hm LCTRL SPACE        &trans
-                                          &trans     &trans          &kp LEFT_ALT    &kp LEFT_GUI  &kp SPACE         &trans
+&none  &none            &none            &kp TILDE  &kp QUESTION    &none           &none         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none                 &none                  &none
+&none  &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp PLUS   &kp UNDERSCORE  &kp PERCENT     &kp PIPE      &kp MINUS         &kp EQUAL          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
+&none  &kp EXCLAMATION  &kp AT_SIGN      &kp HASH   &kp DOLLAR      &none           &none         &kp AMPERSAND     &kp ASTERISK       &kp CARET             &hm LCTRL SPACE        &none
+                                         &trans     &trans          &kp LEFT_ALT    &kp LEFT_GUI  &kp SPACE         &trans
             >;
         };
 
@@ -120,10 +120,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL  &kp AT          &kp HASH           &kp DLLR         &kp PRCNT    &kp CARET  &kp AMPS         &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RPAR       &trans
-&trans  &trans    &trans          &hm LALT UP_ARROW  &hm LCTRL SQT    &kp GRAVE    &kp MINUS  &hm RCTRL EQUAL  &hm RALT LBKT  &hm RSHFT RBKT        &hm RGUI BSLH  &trans
-&trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp TILDE    &kp UNDER  &kp PLUS         &kp LBRC       &kp RBRC              &kp PIPE       &trans
-                                  &kp LGUI           &trans           &kp SPACE    &kp RET    &trans           &trans
+&none  &none           &none           &none         &none            &none      &none    &kp CAPS       &none    &kp F11             &kp F12        &none
+&none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp TAB    &kp TAB  &kp BACKSPACE  &kp DEL  &hm LEFT_GUI ENTER  &kp ESCAPE     &none
+&none  &kp F1          &kp F2          &kp F3        &kp F4           &kp F5     &kp F6   &kp F7         &kp F8   &hm RBRC F9         &hm LCTRL F10  &none
+                                       &trans        &none            &none      &none    &none          &trans
             >;
         };
 
