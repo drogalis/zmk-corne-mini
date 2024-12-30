@@ -86,10 +86,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans  &kp G             &kp F           &kp D       &kp W        &kp J        &trans     &kp L      &kp O          &kp U                   &kp Y               &trans
-&trans  &hm LEFT_SHIFT C  &hm LEFT_GUI S  &hm LALT T  &hm LCTRL N  &kp B        &kp COMMA  &kp R      &hm RALT A     &hm LEFT_GUI I          &hm LEFT_SHIFT H    &trans
-&trans  &hm LCTRL Q       &hm LEFT_ALT V  &kp M       &kp P        &kp Z        &trans     &kp X      &kp PERIOD     &hm LEFT_ALT SEMICOLON  &hm LEFT_CONTROL K  &trans
-                                          &kp LGUI    &mo 1        &kp SPACE    &kp RET    &lt 2 TAB  &kp BACKSPACE
+&trans  &kp G             &kp F           &kp D           &kp W    &kp J          &trans       &kp L        &kp O            &kp U                   &kp Y               &trans
+&trans  &hm LEFT_SHIFT C  &hm LEFT_GUI S  &lt 5 T         &lt 4 N  &kp B          &kp COMMA    &lt 6 R      &lt 7 A          &hm LEFT_GUI I          &hm LEFT_SHIFT H    &trans
+&trans  &hm LCTRL Q       &hm LEFT_ALT V  &kp M           &kp P    &kp Z          &trans       &kp X        &kp PERIOD       &hm LEFT_ALT SEMICOLON  &hm LEFT_CONTROL K  &trans
+                                          &kp LEFT_SHIFT  &lt 1 E  &lt 3 SPACE    &lt 3 SPACE  &lt 2 SPACE  &kp RIGHT_SHIFT
             >;
         };
 
@@ -103,10 +103,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans  &kp N1       &kp N2        &kp N3             &kp N4           &kp N5           &kp N6   &kp N7        &kp N8       &kp N9        &kp N0            &trans
-&trans  &hm LGUI N0  &hm LSHFT N4  &hm LALT UP_ARROW  &hm LCTRL DEL    &kp PAGE_UP      &kp N0   &hm RCTRL N4  &hm RALT N5  &hm RSHFT N6  &hm RGUI PAGE_UP  &trans
-&trans  &trans       &kp LEFT      &kp DOWN           &kp RIGHT_ARROW  &kp PAGE_DOWN    &trans   &kp N1        &kp N2       &kp N3        &kp PAGE_DOWN     &trans
-                                   &kp LGUI           &trans           &kp SPACE        &kp RET  &trans        &trans
+&trans  &trans           &trans           &kp TILDE  &kp QUESTION    &trans          &kp N6       &kp N7        &kp N8           &kp N9        &kp N0            &trans
+&trans  &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp PLUS   &kp UNDERSCORE  &kp PERCENT     &kp N0       &hm RCTRL N4  &hm RALT N5      &hm RSHFT N6  &hm RGUI PAGE_UP  &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN      &kp HASH   &kp DOLLAR      &trans          &trans       &kp N1        &kp N2           &kp N3        &kp PAGE_DOWN     &trans
+                                          &trans     &trans          &kp LEFT_ALT    &lt 3 SPACE  &lt 2 SPACE   &kp RIGHT_SHIFT
             >;
         };
 
