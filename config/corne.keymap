@@ -103,10 +103,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans  &trans           &trans           &kp TILDE  &kp QUESTION    &trans          &kp N6       &kp N7        &kp N8           &kp N9        &kp N0            &trans
-&trans  &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp PLUS   &kp UNDERSCORE  &kp PERCENT     &kp N0       &hm RCTRL N4  &hm RALT N5      &hm RSHFT N6  &hm RGUI PAGE_UP  &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN      &kp HASH   &kp DOLLAR      &trans          &trans       &kp N1        &kp N2           &kp N3        &kp PAGE_DOWN     &trans
-                                          &trans     &trans          &kp LEFT_ALT    &lt 3 SPACE  &lt 2 SPACE   &kp RIGHT_SHIFT
+&trans  &trans           &trans           &kp TILDE  &kp QUESTION    &trans          &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans                &trans                 &trans
+&trans  &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp PLUS   &kp UNDERSCORE  &kp PERCENT     &kp PIPE      &kp MINUS         &kp EQUAL          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN      &kp HASH   &kp DOLLAR      &trans          &trans        &kp AMPERSAND     &kp ASTERISK       &kp CARET             &hm LCTRL SPACE        &trans
+                                          &trans     &trans          &kp LEFT_ALT    &kp LEFT_GUI  &kp SPACE         &trans
             >;
         };
 
